@@ -1,0 +1,140 @@
+/* Import the Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Set the font family for the body */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Set the font family for headings */
+h1, h2, h3 {
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.background-img1{
+    background-image: url("/LA1/imgs/img1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+/* start of the plot/2nd img*/
+.background-img2{
+    background-image: url("/LA1/imgs/img2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.movie-title{
+    position: absolute;
+    width: 687.11px;
+    height: 67.76px;
+    top: 1167.17px;
+    left: 893.2px;
+    /* left: calc(50% - 687.11px/2 + 276.75px); */
+    /* top: calc(50% - 67.76px/2 - 397.45px); */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    /* or 120% */
+    letter-spacing: -0.022em;
+    color: #FFFFFF;
+}
+
+.subtext{
+    position: relative;
+    width: 200.63px;
+    height: 36.26px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 48px;
+    color: rgba(250, 253, 255, 0.8);
+}
+
+.subtext1{
+    position: absolute;
+    top: 1127px;
+    left: 1337.16px;
+}
+
+.subtext2{
+    position: absolute;
+    top: 1127px;
+    left: 1426.16px;
+}
+
+.subtext3{
+    position: absolute;
+    top: 1214.72px;
+    left: 893.31px;
+}
+
+.subtext4{
+    position: absolute;
+    top: 1214.72px;
+    left: 968.5px;
+}
+
+.subtext5{
+    position: absolute;
+    top: 1214.72px;
+    left: 1076.54px;
+}
+
+.subtext6{
+    position: absolute;
+    top: 1214.72px;
+    left: 1262.16px;
+}
+
+.subtext7{
+    position: absolute;
+    top: 1214.72px;
+    left: 1387.97px;
+}
+
+.plot-text{
+    position: absolute;
+    width: 687.11px;
+    height: 198.76px;
+    top: 1381.03px;
+    left: 893.31px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 48px;
+    /* or 185% */
+    letter-spacing: -0.022em;
+    color: #FFFFFF;
+}
+
+.subtext8{
+    position: absolute;
+    top: 1607.51px;
+    left: 893.31px;
+}
+
+.background-img3{
+    background-image: url("/LA1/imgs/img3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+

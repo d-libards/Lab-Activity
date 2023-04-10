@@ -20,14 +20,14 @@ body {
 
 .bg {
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
 }
 
 .background-img1 {
-  background-image: url("/LA1/imgs/img1.png");
+  background-image: url("/LA1/imgs/replaceimg1.jpg");
 }
 
 /* PLOT */

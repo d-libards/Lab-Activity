@@ -1,0 +1,276 @@
+/* Import the Inter font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+/* Set the font family for the body */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Set the font family for headings */
+h1,
+h2,
+h3 {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.background-img1 {
+  background-image: url("/LA1/imgs/img1.png");
+}
+
+/* PLOT */
+.background-img2 {
+  background-image: url("/LA1/imgs/img2.png");
+}
+
+.yellow-rec{
+  position: absolute;
+  height: 34px;
+  width: 136px;
+  left: 893px;
+  top: 1122px;
+  border-radius: 6px;
+  padding: 0px 8px 0px 8px;
+  background: #EEF0F2;
+  border-radius: 6px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.006em;
+  color: #252C32;
+}
+
+.movie-title {
+  position: absolute;
+  width: 687.11px;
+  height: 67.76px;
+  top: 1167.17px;
+  left: 893.2px;
+  /* left: calc(50% - 687.11px/2 + 276.75px); */
+  /* top: calc(50% - 67.76px/2 - 397.45px); */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  /* or 120% */
+  letter-spacing: -0.022em;
+  color: #ffffff;
+}
+
+.icons{
+  position: absolute;
+  left: 890px;
+  top: 1290px;
+  border-radius: 0px;
+  color: #F8D148;
+}
+
+.star2{
+  left: 920px;
+}
+
+.star3{
+  left: 950px;
+}
+
+.star4 {
+  left: 980px;
+}
+
+.half-star {
+  left: 1010px;
+}
+.subtext {
+  position: relative;
+  width: 200.63px;
+  height: 36.26px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 48px;
+  color: rgba(250, 253, 255, 0.8);
+}
+
+.subtext1 {
+  position: absolute;
+  top: 1127px;
+  left: 1337.16px;
+}
+
+.subtext2 {
+  position: absolute;
+  top: 1127px;
+  left: 1426.16px;
+}
+
+.subtext3 {
+  position: absolute;
+  top: 1214.72px;
+  left: 893.31px;
+}
+
+.subtext4 {
+  position: absolute;
+  top: 1214.72px;
+  left: 968.5px;
+}
+
+.subtext5 {
+  position: absolute;
+  top: 1214.72px;
+  left: 1076.54px;
+}
+
+.subtext6 {
+  position: absolute;
+  top: 1214.72px;
+  left: 1262.16px;
+}
+
+.subtext7 {
+  position: absolute;
+  top: 1214.72px;
+  left: 1387.97px;
+}
+
+.yellow-line{
+  position: absolute;
+  width: 5px;
+  height: 698px;
+  top: 1050.03px;
+  left: 1239.31px;
+
+  background: #F8D148;
+  transform: rotate(90deg);
+}
+
+.plot-text {
+  position: absolute;
+  width: 687.11px;
+  height: 198.76px;
+  top: 1381.03px;
+  left: 893.31px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 48px;
+  /* or 185% */
+  letter-spacing: -0.022em;
+  color: #ffffff;
+  text-align: justify;
+}
+
+.subtext8 {
+  position: absolute;
+  top: 1607.51px;
+  left: 893.31px;
+  text-decoration: none;
+}
+
+.trailer{
+  position: absolute;
+  width: 445px;
+  height: 65px;
+  left: 889.4px;
+  top: 1750.97px;
+  background-color: #F8D148; 
+  border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.006em;
+  color: #000000;
+  border-radius: 20px;
+}
+
+.arrow{
+  padding-left: 10px;
+}
+
+.img1{
+  position: absolute;
+  width: 232px;
+  height: 143.55px;
+  left: 1637.56px;
+  top: 1033.03px;
+}
+
+.img2{
+  position: absolute;
+  width: 231px;
+  height: 129px;
+  left: 1637.28px;
+  top: 1200.04px;
+}
+
+.img3{
+  position: absolute;
+  width: 231px;
+  height: 129px;
+  left: 1636px;
+  top: 1352.79px;
+}
+
+.img4{
+  position: absolute;
+  width: 229.72px;
+  height: 129px;
+  left: 1638.7px;
+  top: 1505.54px;
+}
+
+.img5{
+  position: absolute;
+  width: 229.72px;
+  height: 129px;
+  left: 1638.7px;
+  top: 1658.29px;
+}
+
+/* REVIEWS */
+.background-img3 {
+  background-image: url("/LA1/imgs/img3.png");
+}
+
+/* Footer */
+
+.footer {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  background: #0a0a03;
+  text-align: center;
+  margin: 0;
+}
+
+.credits {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 48px;
+  letter-spacing: -0.022em;
+  color: white;
+}
+
+/* Footer End */

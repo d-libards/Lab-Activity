@@ -13,7 +13,6 @@ Note that this repository is separate from the main repository that is used for 
 | James Luis Blanco  |   |
 | Mary Grace Arboladura  |   |
 | Mathew James Muyco  |   |
-
 | Jorge Gabriel  |   |
 
 last edited: April 10, 2023

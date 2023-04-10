@@ -35,7 +35,7 @@ body {
   background-image: url("/LA1/imgs/img2.png");
 }
 
-.yellow-rec{
+.yellow-rec {
   position: absolute;
   height: 34px;
   width: 136px;
@@ -43,15 +43,15 @@ body {
   top: 1122px;
   border-radius: 6px;
   padding: 0px 8px 0px 8px;
-  background: #EEF0F2;
+  background: #eef0f2;
   border-radius: 6px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: -0.006em;
-  color: #252C32;
+  color: #252c32;
 }
 
 .movie-title {
@@ -72,19 +72,19 @@ body {
   color: #ffffff;
 }
 
-.icons{
+.icons {
   position: absolute;
   left: 890px;
   top: 1290px;
   border-radius: 0px;
-  color: #F8D148;
+  color: #f8d148;
 }
 
-.star2{
+.star2 {
   left: 920px;
 }
 
-.star3{
+.star3 {
   left: 950px;
 }
 
@@ -149,14 +149,14 @@ body {
   left: 1387.97px;
 }
 
-.yellow-line{
+.yellow-line {
   position: absolute;
   width: 5px;
   height: 698px;
   top: 1050.03px;
   left: 1239.31px;
 
-  background: #F8D148;
+  background: #f8d148;
   transform: rotate(90deg);
 }
 
@@ -184,15 +184,15 @@ body {
   text-decoration: none;
 }
 
-.trailer{
+.trailer {
   position: absolute;
   width: 445px;
   height: 65px;
   left: 889.4px;
   top: 1750.97px;
-  background-color: #F8D148; 
+  background-color: #f8d148;
   border: none;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -203,11 +203,11 @@ body {
   border-radius: 20px;
 }
 
-.arrow{
+.arrow {
   padding-left: 10px;
 }
 
-.img1{
+.img1 {
   position: absolute;
   width: 232px;
   height: 143.55px;
@@ -215,7 +215,7 @@ body {
   top: 1033.03px;
 }
 
-.img2{
+.img2 {
   position: absolute;
   width: 231px;
   height: 129px;
@@ -223,7 +223,7 @@ body {
   top: 1200.04px;
 }
 
-.img3{
+.img3 {
   position: absolute;
   width: 231px;
   height: 129px;
@@ -231,7 +231,7 @@ body {
   top: 1352.79px;
 }
 
-.img4{
+.img4 {
   position: absolute;
   width: 229.72px;
   height: 129px;
@@ -239,7 +239,7 @@ body {
   top: 1505.54px;
 }
 
-.img5{
+.img5 {
   position: absolute;
   width: 229.72px;
   height: 129px;
@@ -292,6 +292,194 @@ body {
 .background-img3 {
   background-image: url("/LA1/imgs/img3.png");
 }
+
+.review-title {
+  font-family: "Kumbh Sans";
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 93px;
+
+  width: 100%;
+  height: 93px;
+  margin: 0;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.review1 {
+  position: absolute;
+  left: 316px;
+  top: 2107px;
+  width: 492.21px;
+  height: 333px;
+  border-radius: 30px;
+  margin: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(15px);
+}
+
+.review2 {
+  position: absolute;
+  left: 1111.79px;
+  top: 2107px;
+  width: 492.21px;
+  height: 333px;
+  border-radius: 30px;
+  margin: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(15px);
+}
+
+.review-photo1 {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  left: 380px;
+  top: 2180px;
+  border-radius: 50%;
+
+  border: 3px solid #000000;
+}
+
+.review-photo2 {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  left: 1180px;
+  top: 2180px;
+  border-radius: 50%;
+
+  border: 3px solid #000000;
+}
+
+.name1 {
+  position: absolute;
+  width: 333.83px;
+  height: 73px;
+  left: 540px;
+  top: 2160px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 28px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.2px;
+
+  color: white;
+}
+
+.name2 {
+  position: absolute;
+  width: 333.83px;
+  height: 73px;
+  left: 1330px;
+  top: 2160px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 28px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.2px;
+
+  color: white;
+}
+
+.line1 {
+  position: absolute;
+  width: 492.21px;
+  height: 0px;
+  left: 364px;
+  top: 2330px;
+
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.line2 {
+  position: absolute;
+  width: 492.21px;
+  height: 0px;
+  left: 1160px;
+  top: 2330px;
+
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.comment1 {
+  position: absolute;
+  width: 394.52px;
+  height: 105px;
+  left: 415px;
+  top: 2340px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 35px;
+
+  color: white;
+}
+
+.comment2 {
+  position: absolute;
+  width: 394.52px;
+  height: 105px;
+  left: 1220px;
+  top: 2320px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 35px;
+
+  color: white;
+}
+
+.watch-button {
+  position: absolute;
+  width: 498px;
+  height: 107px;
+  left: 770px;
+  top: 2634px;
+
+  background: #f8d148;
+  border-radius: 20px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 24px;
+
+  text-align: center;
+  letter-spacing: -0.006em;
+
+  color: #000000;
+}
+/* REVIEWS End */
 
 /* Footer */
 

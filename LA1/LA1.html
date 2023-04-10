@@ -37,15 +37,37 @@
       <a href="https://www.imdb.com/title/tt6710474/" class="subtext subtext8"
         >More Info <i class="fa-solid fa-circle-arrow-right arrow"></i
       ></a>
-      <a href="https://www.youtube.com/watch?v=wxN1T1uxQ2g"></a>
+      <a href="https://www.youtube.com/watch?v=wxN1T1uxQ2g">
       <button class="trailer">
         VIEW TRAILER<i class="fa-solid fa-circle-arrow-right arrow"></i>
       </button>
-      <img src="/LA1/imgs/side img 1.png" alt="" class="img1" />
-      <img src="/LA1/imgs/side img 2.png" alt="" class="img2" />
-      <img src="/LA1/imgs/side img 3.png" alt="" class="img3" />
-      <img src="/LA1/imgs/side img 4.png" alt="" class="img4" />
-      <img src="/LA1/imgs/side img 5.png" alt="" class="img5" />
+      </a>
+      <div class ="container">
+
+      <div class="image-container">
+      <div class=image><img src="/LA1/imgs/side img 1.png" alt="" class="img1"/></div>
+      <div class=image><img src="/LA1/imgs/side img 2.png" alt="" class="img2"/></div>
+      <div class=image><img src="/LA1/imgs/side img 3.png" alt="" class="img3"/></div>
+      <div class=image><img src="/LA1/imgs/side img 4.png" alt="" class="img4"/></div>
+      <div class=image><img src="/LA1/imgs/side img 5.png" alt="" class="img5"/></div>
+        </div>
+      <div class ="popup-image">
+        <span>&times;</span>
+        <img src="/LA1/imgs/side img 5.png">
+      </div>
+    </div>
+      <script>
+        document.querySelectorAll(".image-container img").forEach(image => {
+          image.onclick = () => {
+            document.querySelector('.popup-image').style.display = "block";
+            document.querySelector('.popup-image img').src = image.getAttribute('src');
+          }
+        });
+
+        document.querySelector('.popup-image span').onclick = () => {
+          document.querySelector('.popup-image').style.display = "none";
+        }
+      </script>
     </div>
     <div class="bg background-img3">
       <h1>Check out the people's review now!</h1>

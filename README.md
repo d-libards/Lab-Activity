@@ -1,1 +1,1 @@
-# wavez
+# Lab activity in Web Development

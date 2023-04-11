@@ -13,6 +13,29 @@ h3 {
   font-family: "Inter", sans-serif;
 }
 
+/* HEADER */
+
+.header {
+  position: top;
+  width: 100%;
+  left: 0px;
+  background: #0a0a03;
+  text-align: center;
+  margin:0;
+}
+
+.title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 48px;
+  letter-spacing: -0.022em;
+  color: white;
+  margin: 0;
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -494,6 +517,7 @@ body {
   text-align: center;
   margin: 0;
 }
+
 
 .credits {
   font-family: "Inter";

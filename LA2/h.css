@@ -254,6 +254,9 @@ button:hover {
 
 /* ====================================   NEW PRODUCTS  ==================================== */
 
+.new-prod-cont{
+    padding-left: 90px;
+}
 .cat-blur-2{
     position: absolute;
     background-image: url("food/cat-b1.jpg");
@@ -448,14 +451,14 @@ table tr:hover{
 .reserve-form{
     display: column;
     width: 500px;
-    height: 390px;
+    height: 420px;
     background: white;
     border-radius: 2px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     color: #787878;
     font-family: 'Poppins', sans-serif;
 }
-
+ 
 .reserve-form h1{
     font-family: 'Engagement', cursive;
     color: black;
@@ -485,7 +488,7 @@ table tr:hover{
     color: white;
     padding: 5px 40px;
     text-decoration: none;
-    margin: 15px 130px;
+    margin: 35px 130px;
     cursor: pointer;
 }
 
@@ -503,3 +506,46 @@ table tr:hover{
     margin-left: 10px;
 }
 
+/* ==================================== SERVICES  ==================================== */
+
+.services-blur{
+    position: fixed;
+    top: 0;
+    background-image: url("food/cat-b1.jpg");
+    width: 100%;
+    height:130vh;
+    -webkit-filter: brightness(50%);
+    filter:brightness(50%);
+    z-index: -1;
+}
+
+.services h2{
+    font-family: 'Engagement', cursive;
+    font-size: 3rem;
+    font-weight: 100;
+}
+.services p{
+    color: black;
+    font-weight: bold;
+}
+.zaza{
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+}
+
+.tagger{
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: 'Yesteryear', cursive;
+}
+.serv-content{
+    width: 600px;
+    text-align: justify;
+}
+
+.hrline{
+    border-bottom: 3px solid #1d1d1d;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 20px;
+}

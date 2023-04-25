@@ -1,0 +1,12 @@
+Local Restaurant
+
+- title
+- heading
+- table
+- forms
+- multimedia
+- link to another related webpage
+
+body
+- table for menu, prices
+- form for reservation

@@ -9,14 +9,12 @@
       src="https://kit.fontawesome.com/af7e1c2216.js"
       crossorigin="anonymous"
     ></script>
-    <div class = "header">
-    <p class="title">
-      This is a movie promotion webpage
-    </p>
-  </div>
     <title>MOVIE PROMOTION WEBPAGE</title>
   </head>
   <body>
+    <div class="header">
+      <p class="title">This is a movie promotion webpage</p>
+    </div>
     <div class="bg background-img1"></div>
     <div class="bg background-img2">
       <div class="yellow-rec">Featured Movie</div>
@@ -43,35 +41,45 @@
         >More Info <i class="fa-solid fa-circle-arrow-right arrow"></i
       ></a>
       <a href="https://www.youtube.com/watch?v=wxN1T1uxQ2g">
-      <button class="trailer">
-        VIEW TRAILER<i class="fa-solid fa-circle-arrow-right arrow"></i>
-      </button>
+        <button class="trailer">
+          VIEW TRAILER<i class="fa-solid fa-circle-arrow-right arrow"></i>
+        </button>
       </a>
-      <div class ="container">
-
-      <div class="image-container">
-      <div class=image><img src="/LA1/imgs/Rside img 1.jpg" alt="" class="img1"/></div>
-      <div class=image><img src="/LA1/imgs/Rside img 2.jpg" alt="" class="img2"/></div>
-      <div class=image><img src="/LA1/imgs/Rside img 3.jpg" alt="" class="img3"/></div>
-      <div class=image><img src="/LA1/imgs/Rside img 4.jpg" alt="" class="img4"/></div>
-      <div class=image><img src="/LA1/imgs/Rside img 5.jpg" alt="" class="img5"/></div>
+      <div class="container">
+        <div class="image-container">
+          <div class="image">
+            <img src="/LA1/imgs/Rside img 1.jpg" alt="" class="img1" />
+          </div>
+          <div class="image">
+            <img src="/LA1/imgs/Rside img 2.jpg" alt="" class="img2" />
+          </div>
+          <div class="image">
+            <img src="/LA1/imgs/Rside img 3.jpg" alt="" class="img3" />
+          </div>
+          <div class="image">
+            <img src="/LA1/imgs/Rside img 4.jpg" alt="" class="img4" />
+          </div>
+          <div class="image">
+            <img src="/LA1/imgs/Rside img 5.jpg" alt="" class="img5" />
+          </div>
         </div>
-      <div class ="popup-image">
-        <span>&times;</span>
-        <img src="/LA1/imgs/side img 5.png">
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="/LA1/imgs/side img 5.png" />
+        </div>
       </div>
-    </div>
       <script>
-        document.querySelectorAll(".image-container img").forEach(image => {
+        document.querySelectorAll(".image-container img").forEach((image) => {
           image.onclick = () => {
-            document.querySelector('.popup-image').style.display = "block";
-            document.querySelector('.popup-image img').src = image.getAttribute('src');
-          }
+            document.querySelector(".popup-image").style.display = "block";
+            document.querySelector(".popup-image img").src =
+              image.getAttribute("src");
+          };
         });
 
-        document.querySelector('.popup-image span').onclick = () => {
-          document.querySelector('.popup-image').style.display = "none";
-        }
+        document.querySelector(".popup-image span").onclick = () => {
+          document.querySelector(".popup-image").style.display = "none";
+        };
       </script>
     </div>
     <div class="bg background-img3">
@@ -98,8 +106,8 @@
         </p>
       </div>
       <a href="placeholder.html">
-      <button class="watch-button">WATCH IT NOW!</button>
-    </a>
+        <button class="watch-button">WATCH IT NOW!</button>
+      </a>
     </div>
     <div class="footer">
       <p class="credits">

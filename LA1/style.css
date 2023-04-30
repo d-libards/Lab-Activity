@@ -21,7 +21,7 @@ h3 {
   left: 0px;
   background: #0a0a03;
   text-align: center;
-  margin:0;
+  margin: 0;
 }
 
 .title {
@@ -34,7 +34,6 @@ h3 {
   color: white;
   margin: 0;
 }
-
 
 body {
   margin: 0;
@@ -53,7 +52,7 @@ body {
   background-image: url("/LA1/imgs/replaceimg1.jpg");
 }
 
-/* PLOT */
+/* PLOT */__
 .background-img2 {
   background-image: url("/LA1/imgs/img2.png");
 }
@@ -336,7 +335,7 @@ body {
 
 .review1 {
   position: absolute;
-  left: 316px;
+  left: 250px;
   top: 2107px;
   width: 492.21px;
   height: 333px;
@@ -372,7 +371,7 @@ body {
   position: absolute;
   width: 125px;
   height: 125px;
-  left: 380px;
+  left: 330px;
   top: 2180px;
   border-radius: 50%;
 
@@ -396,7 +395,7 @@ body {
   position: absolute;
   width: 333.83px;
   height: 73px;
-  left: 540px;
+  left: 490px;
   top: 2160px;
 
   font-family: "Poppins";
@@ -436,7 +435,7 @@ body {
   position: absolute;
   width: 492.21px;
   height: 0px;
-  left: 364px;
+  left: 300px;
   top: 2330px;
 
   border: 1px solid rgba(0, 0, 0, 0.5);
@@ -456,7 +455,7 @@ body {
   position: absolute;
   width: 394.52px;
   height: 105px;
-  left: 415px;
+  left: 350px;
   top: 2340px;
 
   font-family: "Poppins";
@@ -488,7 +487,7 @@ body {
   position: absolute;
   width: 450px;
   height: 100px;
-  left: 810px;
+  left: 740px;
   top: 2634px;
 
   background: #f8d148;
@@ -517,7 +516,6 @@ body {
   text-align: center;
   margin: 0;
 }
-
 
 .credits {
   font-family: "Inter";

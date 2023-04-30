@@ -1,7 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body {
   background-color: #fbe4d8;
-  height: 100vh;
-  padding: 48px 64px 48px 64px;
+}
+
+.container {
+  padding: 5rem 0 5rem 0;
+  width: 100%;
+}
+
+.main-container {
+  width: 100%;
+  margin: auto;
+}
+
+.element-container {
+  width: 80%;
+  margin: auto;
+}
+
+.posistion-container {
+  padding: 20px 64px 20px 64px;
+  background-image: url(background.jpg);
+  margin-bottom: 20px;
 }
 
 .webpage-banner {
@@ -14,4 +38,61 @@ body {
   color: #522b5b;
   text-decoration: underline dotted;
   text-transform: uppercase;
+
+  margin-bottom: 30px;
+}
+
+.title-banner {
+  border-bottom: 3px solid red;
+  margin: 10px;
+}
+
+.container-design {
+  border: 2px solid black;
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 10px;
+}
+
+.static-sample {
+  position: static;
+  border: 3px dotted green;
+}
+
+.relative-sample {
+  background-image: url(mountain.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+  height: 150px;
+  border: 3px solid green;
+}
+
+.absolute-sample {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.fixed-sample {
+  height: 50px;
+  position: fixed;
+  top: 8px;
+  right: 16px;
+  border: 3px dotted red;
+}
+
+.display-container {
+  padding: 20px 64px 20px 64px;
+  background-color: #e1cbd7;
+}
+
+.example-div {
+  margin-bottom: 10px;
 }

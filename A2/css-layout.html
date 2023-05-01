@@ -5,16 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Activity #2</title>
+    <title>CSS Layout</title>
   </head>
   <body>
     <div class="container">
-      <h1 class="webpage-banner">Activity #2 - Web Development</h1>
+      <h1 class="webpage-banner">CSS Layout</h1>
       <div class="main-container">
         <div class="element-container">
           <div class="posistion-container">
             <h1 class="title-banner">A. Positioning</h1>
-
             <div class="static-container container-design">
               <h3>1. Static Positioning</h3>
               <div class="static-sample">
@@ -78,52 +77,8 @@
               <h3>1. Block-level element</h3>
               <div class="block-sample">
                 <div class="example-div">
-                  <h5>Table</h5>
-                  <table
-                    border="1"
-                    bgcolor="#FFFACD"
-                    cellpadding="5"
-                    cellspacing="5"
-                  >
-                    <tr>
-                      <caption>
-                        Student Record
-                      </caption>
-                    </tr>
-                    <tr>
-                      <th>Name</th>
-                      <td>Dominique</td>
-                      <td>Jorge</td>
-                      <td>Mary Grace</td>
-                      <td>Mathew James</td>
-                      <td>James Luis</td>
-                    </tr>
-                    <tr>
-                      <th>Number</th>
-                      <td>0909090909</td>
-                      <td>0909090909</td>
-                      <td>0909090909</td>
-                      <td>0909090909</td>
-                      <td>0909090909</td>
-                    </tr>
-                    <tr>
-                      <th>Address</th>
-                      <td>Quezon City</td>
-                      <td>Quezon City</td>
-                      <td>Muntinglupa City</td>
-                      <td>Bulacan</td>
-                      <td>Quezon City</td>
-                    </tr>
-                    <tr>
-                      <th>University</th>
-                      <td>Polytechnic University of the Philippines</td>
-                      <td>Polytechnic University of the Philippines</td>
-                      <td>Polytechnic University of the Philippines</td>
-                      <td>Polytechnic University of the Philippines</td>
-                      <td>Polytechnic University of the Philippines</td>
-                    </tr>
-                    <tr></tr>
-                  </table>
+                  <h5>Division</h5>
+                  <div class="div-sample"></div>
                 </div>
                 <div class="example-div">
                   <h5>Horizontal line</h5>
@@ -143,9 +98,9 @@
                 </div>
               </div>
             </div>
-            <div class="Inline-container container-design">
+            <div class="inline-container container-design">
               <h3>2. Inline-level element</h3>
-              <div>
+              <div class="inline-sample">
                 <h5>strong - the bolded text is inside of strong tag</h5>
                 <p>This text have a <strong> strong</strong> tag</p>
                 <h5>span - the colored text is inside of span tag</h5>
@@ -154,17 +109,260 @@
                 </p>
                 <h5>a - hyperlink tag</h5>
                 <p>
-                  <a href="https://www.github.com">Visit github.com!</a>
+                 <p>This repo is posted on  <a href="https://www.github.com"> github.com!</a> </p>
                 </p>
               </div>
             </div>
             <div class="d-prop-container container-design">
-              <h3>3. Display porperty value</h3>
+              <h3>3. Display property value</h3>
               <div class="d-prop-sample">
-                <div>
-                  
+                <div class="inlineblock-sample example-div">
+                  <h5>display: inline-block</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloremque non reiciendis officiis
+                    <span> officia sunt atque velit impedit. </span>Reiciendis
+                    mollitia quidem tenetur, debitis provident reprehenderit
+                    quasi, dolores quae, at perspiciatis optio.
+                  </p>
+                </div>
+                <div class="hidden-sample example-div">
+                  <h5>display: none</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloremque non reiciendis officiis
+                    <span> officia sunt atque velit impedit. </span>Reiciendis
+                    mollitia quidem tenetur, debitis provident reprehenderit
+                    quasi, dolores quae, at perspiciatis optio.
+                  </p>
+                </div>
+                <div class="block-sample example-div">
+                  <h5>display: block</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Doloremque non reiciendis officiis
+                    <span> officia sunt atque velit impedit. </span>Reiciendis
+                    mollitia quidem tenetur, debitis provident reprehenderit
+                    quasi, dolores quae, at perspiciatis optio.
+                  </p>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div class="float-container">
+            <h1 class="title-banner">C. Float</h1>
+            <div class="clear-sample container-design">
+              <h3>1. Clear float</h3>
+              <h5>clear: left</h5>
+              <div class="example-div">
+                <p><img src="mountain.jpg" alt="" class="img1"></p>
+                <p><img src="background.jpg" alt="" class="img2"></p>
+                <p class="clear-sample1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga repellat natus ullam maxime ipsum, officiis pariatur! Ipsam, sint, nihil, adipisci consectetur et enim iure porro deleniti dolorem culpa laudantium eum!</p>
+              </div>
+              <div>
+              <h5>clear: both</h5>
+              <p><img src="mountain.jpg" alt="" class="img1"></p>
+              <p><img src="background.jpg" alt="" class="img2"></p>
+              <p class="clear-sample2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga repellat natus ullam maxime ipsum, officiis pariatur! Ipsam, sint, nihil, adipisci consectetur et enim iure porro deleniti dolorem culpa laudantium eum!</p>
+            </div>
+            </div>
+            <div class="float-sample container-design">
+              <h3>2. Float property values</h3>
+              <div class="example-div">
+                <h5>float: left</h5>
+                <p><img src="mountain.jpg" alt="" class="img1"></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facilis quasi possimus asperiores, repudiandae eveniet consectetur dignissimos blanditiis. Iure rem molestias sed tempore hic vel consectetur consequatur explicabo. Error, ipsam!</p>
+              </div>
+              <div class="example-div" style="margin-top: 40px;">
+                <h5>float: right</h5>
+                <p><img src="background.jpg" alt="" class="img2"></p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus dicta velit sint iste necessitatibus quod ipsum. Ex modi et minima quam quisquam. Reprehenderit cumque delectus possimus quidem quod hic deserunt!</p>
+              </div>
+              <div style="margin-top: 80px;">
+                <h5>float: none</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<img src="background2.jpg" alt="" class="img3"> Saepe ea voluptatum nostrum deleniti! Harum suscipit, aut earum porro dolorem officiis quis, doloribus odio illo, sunt minima in molestias quidem eos.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-container">
+            <h1 class="title-banner">D. Flex</h1>
+            <div class="flexcon-sample container-design">
+              <h3>1. Flex container</h3>
+              <h5>flex-direction: row</h5>
+              <div class="flex-row example-div">
+                <div style="background-color: green;">1</div>
+                <div style="background-color: red;">2</div>
+                <div style="background-color: blue;">3</div>
+              </div>
+              <h5>flex-direction: column</h5>
+              <div class="flex-col example-div">
+                <div style="background-color: green;">1</div>
+                <div style="background-color: red;">2</div>
+                <div style="background-color: blue;">3</div>
+              </div>
+              <h5>justify-content: space-between</h5>
+              <div class="just-space example-div">
+              <div style="background-color: green;">1</div>
+              <div style="background-color: red;">2</div>
+              <div style="background-color: blue;">3</div>
+            </div>
+            </div>
+
+            <div class="flexitem-sample container-design">
+              <h3>2. Flex items</h3>
+              <h5>flex item</h5>
+              <p>The divs inside of flex container is the flex items</p>
+              <div class="flex-items example-div">
+                <div style="background-color: green;">1</div>
+                <div style="background-color: red;">2</div>
+                <div style="background-color: blue;">3</div>
+                <div style="background-color: yellow;">4</div>
+              </div>
+              <h5>order property</h5>
+              <div class="flex-items example-div">
+                <div style="background-color: green; order: 3;">1</div>
+                <div style="background-color: red; order: 4;">2</div>
+                <div style="background-color: blue; order: 2;">3</div>
+                <div style="background-color: yellow; order: 1;">4</div>
+              </div>
+              <h5>align-self</h5>
+              <div class="align-sample example-div">
+                <div style="background-color: green;">1</div>
+                <div style="background-color: red;">2</div>
+                <div style="background-color: blue; align-self: center;">3</div>
+                <div style="background-color: yellow;">4</div>
+              </div>
+            </div>
+
+            <div class="flexprop-sample container-design">
+              <h3>3. Flex Properties</h3>
+              <h5>flex-grow</h5>
+              <div class="flex-items example-div">
+                <div style="background-color: green; flex-grow: 1;">1</div>
+                <div style="background-color: red; flex-grow: 2;">2</div>
+                <div style="background-color: blue; flex-grow: 4;">3</div>
+                <div style="background-color: yellow; flex-grow: 8;">4</div>
+              </div>
+              <h5>flex-basis</h5>
+              <div class="flex-items example-div">
+                <div style="background-color: green; flex-basis: 800px;">1</div>
+                <div style="background-color: red;">2</div>
+                <div style="background-color: blue; flex-basis: 400px;">3</div>
+                <div style="background-color: yellow; flex-basis: 200px;">4</div>
+              </div>
+              <h5>flex-shirk</h5>
+              <div class="flex-items example-div">
+                <div style="background-color: yellow;">1</div>
+                <div style="background-color: red; flex-shrink: 0;">2</div>
+                <div style="background-color: yellow;">3</div>
+                <div style="background-color: yellow;">4</div>
+                <div style="background-color: yellow;">5</div>
+                <div style="background-color: yellow;">6</div>
+                <div style="background-color: yellow;">7</div>
+                <div style="background-color: yellow;">8</div>
+                <div style="background-color: yellow;">9</div>
+                <div style="background-color: yellow;">10</div>
+                <div style="background-color: yellow;">11</div>
+                <div style="background-color: yellow;">12</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-container">
+            <h1 class="title-banner">E. Grid</h1>
+            <div class="grid-sample container-design">
+              <h3>1. Grid container</h3>
+              <h5>Grid</h5>
+              <p>grid-template-columns: auto auto auto</p>
+              <div class="grid example-div">
+                <div style="background-color: green;">1</div>
+                <div style="background-color: red;">2</div>
+                <div style="background-color: blue;">3</div>
+                <div style="background-color: yellow;">4</div>
+                <div style="background-color: pink;">5</div>
+                <div style="background-color: violet;">6</div>
+                <div style="background-color: brown;">7</div>
+                <div style="background-color: orange;">8</div>
+              </div>
+              <p>grid-template-rows: 100px 150px</p>
+              <div class="grid-row example-div">
+                <div style="background-color: green;">1</div>
+                <div style="background-color: red;">2</div>
+                <div style="background-color: blue;">3</div>
+                <div style="background-color: yellow;">4</div>
+                <div style="background-color: pink;">5</div>
+                <div style="background-color: violet;">6</div>
+                <div style="background-color: brown;">7</div>
+                <div style="background-color: orange;">8</div>
+              </div>
+            </div>
+
+            <div class="griditem-sample container-design">
+              <h3>2. Grid Items</h3>
+              <h5>grid area</h5>
+              <div class="grid-area example-div">
+                <div class="item1" style="background-color: green;">1</div>
+                <div class="item2" style="background-color: red;">2</div>
+                <div class="item3" style="background-color: blue;">3</div>
+                <div class="item4" style="background-color: yellow;">4</div>
+                <div class="item5" style="background-color: pink;">5</div>
+                <div class="item6" style="background-color: violet;">6</div>
+                <div class="item7" style="background-color: brown;">7</div>
+                <div class="item8" style="background-color: orange;">8</div>
+                <div class="item9" style="background-color: skyblue;">9</div>
+              </div>
+
+              <div class="grid-area2">
+                <div class="item1" style="background-color: green;">1</div>
+                <div class="item2" style="background-color: red;">2</div>
+                <div class="item3" style="background-color: blue;">3</div>
+                <div class="item4" style="background-color: yellow;">4</div>
+                <div class="item5" style="background-color: pink;">5</div>
+                <div class="item6" style="background-color: violet;">6</div>
+                <div class="item7" style="background-color: brown;">7</div>
+                <div class="item8" style="background-color: orange;">8</div>
+                <div class="item9" style="background-color: skyblue;">9</div>
+                <div class="item10" style="background-color: silver;">10</div>
+                <div class="item11" style="background-color: snow;">11</div>
+                <div class="item12" style="background-color: salmon;">12</div>
+                <div class="item13" style="background-color: sienna;">13</div>
+                <div class="item14" style="background-color: yellowgreen;">14</div>
+                <div class="item15" style="background-color: slategrey;">15</div>
+              </div>
+            </div>
+
+            <div class="gridprop-sample container-design">
+              <h3>3. Grid Properties</h3>
+              <h5>justify-content: center</h5>
+              <div class="grid-center">
+                <div style="background-color: green;">1</div>
+                <div style="background-color: red;">2</div>
+                <div style="background-color: blue;">3</div>
+                <div style="background-color: yellow;">4</div>
+                <div style="background-color: pink;">5</div>
+                <div style="background-color: violet;">6</div>
+              </div>
+              <h5>justify-content: space-between</h5>
+              <div class="grid-space">
+                <div style="background-color: green;">1</div>
+                <div style="background-color: red;">2</div>
+                <div style="background-color: blue;">3</div>
+                <div style="background-color: yellow;">4</div>
+                <div style="background-color: pink;">5</div>
+                <div style="background-color: violet;">6</div>
+              </div>
+              <h5>align-content: space-around</h5>
+              <div class="grid-around">
+                <div style="background-color: green;">1</div>
+                <div style="background-color: red;">2</div>
+                <div style="background-color: blue;">3</div>
+                <div style="background-color: yellow;">4</div>
+                <div style="background-color: pink;">5</div>
+                <div style="background-color: violet;">6</div>
+              </div>
+              
             </div>
           </div>
         </div>

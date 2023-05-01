@@ -7,6 +7,10 @@ body {
   background-color: #fbe4d8;
 }
 
+h3 {
+  text-transform: uppercase;
+}
+
 .container {
   padding: 5rem 0 5rem 0;
   width: 100%;
@@ -24,8 +28,12 @@ body {
 
 .posistion-container {
   padding: 20px 64px 20px 64px;
-  background-image: url(background.jpg);
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  background-color: #86abcf;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
 .webpage-banner {
@@ -45,6 +53,8 @@ body {
 .title-banner {
   border-bottom: 3px solid red;
   margin: 10px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .container-design {
@@ -90,9 +100,324 @@ body {
 
 .display-container {
   padding: 20px 64px 20px 64px;
-  background-color: #e1cbd7;
+  margin-bottom: 50px;
+  background-color: #86abcf;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.inline-sample {
+  text-align: center;
+}
+
+.div-sample {
+  height: 100px;
+  background-color: red;
 }
 
 .example-div {
   margin-bottom: 10px;
+}
+
+.inlineblock-sample span {
+  display: inline-block;
+  background-color: red;
+  width: 75px;
+  height: 75x;
+}
+
+.hidden-sample span {
+  display: none;
+}
+
+.block-sample span {
+  display: block;
+  background-color: red;
+}
+
+.float-container {
+  padding: 20px 64px 20px 64px;
+  margin-bottom: 50px;
+  background-color: #86abcf;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.clear-sample {
+  overflow: auto;
+}
+
+.float-sample {
+  overflow: auto;
+}
+
+.img1 {
+  float: left;
+  height: 75px;
+  width: 75px;
+}
+
+.img2 {
+  float: right;
+  height: 125px;
+  width: 125px;
+}
+
+.img3 {
+  float: none;
+  height: 50px;
+  width: 50px;
+}
+
+.clear-sample1 {
+  clear: left;
+}
+.clear-sample2 {
+  clear: both;
+}
+
+.flex-container {
+  padding: 20px 64px 20px 64px;
+  margin-bottom: 50px;
+  background-color: #86abcf;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  justify-content: center;
+}
+
+.flex-row div {
+  width: 100px;
+  margin: 20px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.flex-col div {
+  width: 100px;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+}
+
+.just-space {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.just-space div {
+  width: 100px;
+  margin: 20px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+}
+
+.flex-items {
+  display: flex;
+  border: 1px solid black;
+}
+
+.flex-items div {
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+}
+
+.align-sample {
+  display: flex;
+  border: 1px solid black;
+  height: 100px;
+}
+
+.align-sample div {
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+}
+
+.grid-container {
+  padding: 20px 64px 20px 64px;
+  margin-bottom: 50px;
+  background-color: #86abcf;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 5px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.grid div {
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  border: 1px solid black;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 100px 150px;
+  gap: 5px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.grid-row div {
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  border: 1px solid black;
+}
+
+.grid-center {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 50px 50px 50px;
+  gap: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.grid-center div {
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  border: 1px solid black;
+}
+
+.grid-space {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 50px 50px 50px;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border: 1px solid black;
+}
+
+.grid-space div {
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  border: 1px solid black;
+}
+
+.grid-around {
+  display: grid;
+  align-content: space-around;
+  grid-template-columns: 50px 50px 50px;
+  gap: 10px;
+  padding: 10px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.grid-around div {
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  border: 1px solid black;
+}
+
+.grid-area {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.grid-area div {
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  border: 1px solid black;
+}
+
+.grid-area .item1 {
+  grid-row: 1 / 5;
+}
+
+.grid-area2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.grid-area2 div {
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  border: 1px solid black;
+}
+
+.grid-area2 .item8 {
+  grid-area: 1 / 2 / 5 / 6;
+}
+
+.font-container {
+  padding: 20px 64px 20px 64px;
+  margin-bottom: 50px;
+  background-color: #86abcf;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.text-container {
+  padding: 20px 64px 20px 64px;
+  margin-bottom: 50px;
+  background-color: #86abcf;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.color-container {
+  padding: 20px 64px 20px 64px;
+  margin-bottom: 50px;
+  background-color: #86abcf;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }

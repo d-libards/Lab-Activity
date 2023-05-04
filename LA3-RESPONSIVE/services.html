@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Services </title>
+    <link rel="icon" href="food/s.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="h.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Engagement&family=Poppins:ital,wght@1,100&family=Yesteryear&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ==============================  NAVIGATION BAR  ============================== -->
+
+    <header>
+        <img class="logo" src="food/3.png" alt="logo" width="60" >
+        <nav>
+            <ul class="navlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+        <a href=""><button>Sign in</button></a>
+    </header>  
+
+    <!-- ==============================  MAIN CONTENT  ============================== -->
+
+    <div class="services-blur"></div>
+    <section class="container services text-center my-5">
+        <div class="row zaza mt-5 mx-auto"> 
+            
+            <h2 class="mt-5">Mutya Cuisine</h2>
+            <p>Live your life 'til you're full!</p>
+            
+            <div class="serv-content mx-auto">
+                <hr>
+                Mutya Cuisine only serves the best and high quality Filipino cuisine. 
+                We like to give you the warmth of home through the delicious food we offer wherever you are. 
+                Food is already a part of our culture. Filipinos love to eat and we best believe that Filipino cuisine is one of the greatest food anyone craves. 
+                From the main course to local desserts that is not only delectable but nutritious as well.
+                We ensure that the workplace is always clean and the food being served is safe and of high quality. 
+                An online ordering system is also available for those who don’t feel like going out and wants to enjoy the comfort of their homes. 
+                Browse your website now and place your orders, we are happy to serve you!
+                <br><br>
+                <hr>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- ==============================   FOOTER    ============================== -->
+
+    <footer class="mt-5"> <!-- py-5-->
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-4 col-md-6 col-12">
+            <!-- <img src="images/logor.png"> --> 
+                <h3>Mutya Cuisine</h3>
+                <p>The name Mutya is the Filipino term for Pearl, as it is founded in the Philippines and is proclaimed as the “Pearl of the Orient Seas” as well as the restaurant offers only proudly Filipino foods. </p>
+            </div>
+            <!--
+            <div class="footer-one col-lg-4 col-md-6 col-12">
+                <h5 class="pb-2">Get in Touch</h5>
+                <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>Sta. Mesa, Manila, Philippines</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Phone</h6>
+                    <p>09998-887-8887</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>mutyacuisine@gmail.com</p>
+                </div>
+            </div>
+            -->
+            <div class="footer-one col-lg-4 col-md-6 col-12">
+                <h5 class="pb-2">Get in Touch</h5>
+                <div class="soobin">
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>Sta. Mesa, Manila, Philippines<p>
+                </div>
+                <div class="soobin">
+                    <h6 class="text-uppercase">Phone</h6>
+                    <p>09998-887-8887</p>
+                </div>
+                <div class="soobin">
+                <h6 class="text-uppercase">Email</h6>
+                <p>mutyacuisine@gmail.com</p>
+                </div>
+                <span><i class="bi bi-facebook"></i></span><span><i class="bi bi-twitter"></i></span><span><i class="bi bi-instagram"></i></span>
+            </div>
+            <div class="footer-one col-lg-4 col-md-6 col-12 mb-5">
+                <h5 class="pb-2">News Letter</h5>
+                <form action="">
+                        <div class="form-group">
+                            <input type="text" class="input-box" placeholder="Your Name" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="input-box" placeholder="Your Email"
+                                required="required" />
+                        </div>
+                        <div>
+                            <button class="btn btn-outline-light" type="submit">Submit Now</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+        
+    </footer>
+
+
+    <script src="src/h all products.js"></script>
+
+    <script>
+        let searchList = document.getElementById('myUL')
+    
+        let generateSearchList = () => {
+            return searchList.innerHTML = productList.map((x) => {
+                let {name, id} = x
+                return ` 
+                <li><a href="product details.html" onclick="prodDetailsPass('${id}')">${name}</a></li>
+                
+                `
+            }).join("")
+        }
+        generateSearchList();
+
+        let customerNameDisplay = () => {
+            let custName = document.getElementById("cust-name");
+            let x = localStorage.getItem("custName");
+
+            if( x === null ){
+                localStorage.setItem("custName", "Sign-In");
+                x = localStorage.getItem("custName");
+            }       
+            custName.innerHTML = x;
+        }
+
+        customerNameDisplay(); 
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js";
+    import { getAuth, GoogleAuthProvider, signInWithRedirect, getRedirectResult, signInWithPopup, signOut  } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js";
+    import { getDatabase, set, ref, get, child, update } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-database.js";
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBUGm6LRZiNVY-sd7LDvyxxS3Pd3Lt_xIQ",
+      authDomain: "mutyacuisine.firebaseapp.com",
+      databaseURL: "https://mutyacuisine-default-rtdb.firebaseio.com/",
+      projectId: "mutyacuisine",
+      storageBucket: "mutyacuisine.appspot.com",
+      messagingSenderId: "505603809728",
+      appId: "1:505603809728:web:ae54064783f3cea0f66825",
+      measurementId: "G-3N3G0W307Y"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider(app);
+
+    signout.addEventListener('click', (e) => {
+        signOut(auth).then(() => {
+            document.getElementById("cust-name").innerHTML="Sign-In";
+            console.log("jhg");
+
+            let zzz = "Sign-In"
+            
+            localStorage.setItem("custName", zzz);
+        }).catch((error) => {
+            //error
+        });
+    })
+
+    // -------------------------------//
+    const db = getDatabase();
+
+    function hearty(){
+        const dbref = ref(db); 
+
+        let arr=["prod31","prod17","prod37","prod36","prod9","prod5","prod4","prod26","prod47","prod48","prod49","prod50"]
+        for(let i=0; i<arr.length; i++){
+            let prods = arr[i]            
+            let yo = document.getElementById(prods);
+            get(child(dbref, "productList/" + prods)).then((snapshot) => {          
+                if(snapshot.exists()){
+                    yo.innerHTML = snapshot.val().heart;
+                }
+                else{
+                    alert("No data found");
+                }
+            })
+        }
+    }
+        hearty();
+
+        // let getlocal = localStorage.getItem("prodIDHeart")
+        let arr1=["prod31","prod17","prod37","prod36","prod9","prod5","prod4","prod26","prod47","prod48","prod49","prod50"]
+        for(let i=0; i<arr1.length; i++){
+            let hr = document.getElementById('heartreact-'+arr1[i])
+            hr.addEventListener('click', heartreact)
+        }
+
+    function heartreact(){
+        let getlocal = localStorage.getItem("prodIDHeart")
+        let hearter = document.getElementById('heartreact-'+getlocal)
+		hearter.innerHTML = `<i class="bi bi-heart-fill hearticon hearticon-fill"></i>`;
+
+        
+		heartcount(getlocal);
+	};
+	function heartcount(getlocal){
+        let id=getlocal;
+        let yo = document.getElementById(id);
+        const dbref = ref(db); 
+            get(child(dbref, "productList/" + id)).then((snapshot) => {          
+                if(snapshot.exists()){
+                    yo.innerHTML = parseInt(snapshot.val().heart) + 1;
+                }
+                else{
+                    alert("No data found");
+                }
+            })
+
+        let updheart = document.getElementById(id).innerHTML
+        updheart = parseInt(updheart) + 1;
+        console.log(updheart)
+
+        update(ref(db, "productList/" + id),{
+                heart: parseInt(updheart)
+            })
+            .then(() =>{
+                // alert("Updated Succesfully");
+            })
+            .catch((error) => {
+                alert("unsucessful, error" + error)
+            });
+    
+	}
+</script>
+
+
+  
+</body>
+</html>

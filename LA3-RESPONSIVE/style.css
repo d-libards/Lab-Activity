@@ -1,0 +1,622 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+@import url("http://fonts.googleapis.com/css?family=Yesteryear");
+@import url("http://fonts.googleapis.com/css?family=Engagement");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "Yesteryear", cursive;
+  color: white;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1d1d1d;
+}
+
+h6 {
+  color: #000000;
+}
+
+p {
+  color: white;
+}
+
+/* ====================================  NAVIGATION BAR  ==================================== */
+
+li,
+a,
+button {
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 10%;
+  background-color: #1d1d1d;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.navlinks {
+  list-style: none;
+}
+
+.navlinks li {
+  display: inline-block;
+  padding: 0px 20px;
+  padding-top: 10px;
+}
+
+.navlinks li a {
+  transition: all 0.3 ease 0s;
+  color: ddd;
+}
+
+.navlinks li a:hover {
+  transition: all 0.3s ease 0s;
+  color: white;
+}
+/* transition-property, duration, timing-function, delay */
+
+button {
+  padding: 9px 25px;
+  border: 2px solid #212529;
+  background-color: #1d1d1d;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: #ddd;
+  color: #1d1d1d;
+}
+
+.hamburger {
+  display: none;
+  padding: 9px 25px;
+  border: 2px solid #212529;
+  background-color: #1d1d1d;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.hamburger:hover {
+  background-color: #ddd;
+  color: #1d1d1d;
+}
+
+/* ==================================== Navigation Bar END ==================================== */
+
+/* ====================================  HOME  ==================================== */
+
+.home-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.home-container img {
+  -webkit-filter: brightness(20%);
+  filter: brightness(70%);
+}
+
+.home-container-md {
+  position: relative;
+  text-align: center;
+  color: white;
+  display: none;
+}
+
+.home-container-md img {
+  -webkit-filter: brightness(20%);
+  filter: brightness(70%);
+}
+
+.home-container h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Engagement", cursive;
+  color: whitesmoke;
+  font-size: 7rem;
+  font-weight: 100;
+}
+
+/* ====================================      HOME END       ==================================== */
+
+/* ====================================  GALLERY  ==================================== */
+
+.featured-blur {
+  position: absolute;
+  background-image: url("food/cat-b6.jpg");
+  width: 100%;
+  height: 150vh;
+  -webkit-filter: brightness(30%);
+  filter: brightness(30%);
+  z-index: -1;
+}
+
+.box-gallery-blur {
+  position: absolute;
+  background-image: url("food/cat-b6.jpg");
+  /* background-attachment: fixed;   */
+  width: 100%;
+  height: 150vh;
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+.gallery {
+  /* container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 0 0 0; /* margin: 40px 20px 0 20px; */
+}
+
+.gallery .gallery-box {
+  /*.container .box */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 100px;
+}
+
+.gallery .gallery-box .dream {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.gallery .gallery-box .dream img {
+  width: 100%;
+  padding: 0; /* padding: 5px; */
+  margin: 0;
+}
+
+.gallery .gallery-box .dream .gallery-product {
+  margin: 5px 5px;
+  position: relative;
+  cursor: pointer;
+}
+.gallery-product:hover img {
+  -webkit-filter: brightness(70%);
+  filter: brightness(70%);
+  transition: 0.5s all;
+}
+.gallery-product img {
+  position: relative;
+}
+.gallery .gallery-box .dream .gallery-product .gallery-details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff9f9;
+  height: auto; /*50%*/
+  width: 100%; /* 70%; */
+  display: none;
+}
+
+.gallery .gallery-box .dream .gallery-product .gallery-details p {
+  margin-top: 20px;
+  font-size: 2rem; /* 1.5 */
+  font-family: "Yesteryear", cursive;
+  color: rgb(50, 19, 29);
+}
+
+.gallery-details p {
+  color: #1d1d1d;
+}
+
+.gallery .gallery-box .dream .gallery-product:hover .gallery-details {
+  display: block;
+  transition: 0.5s all;
+}
+
+.gallery-blur {
+  position: absolute;
+  background-image: url("food/bg8.jpg");
+  width: 100%;
+  height: 200vh;
+  -webkit-filter: brightness(30%);
+  filter: brightness(30%);
+  z-index: -1;
+}
+
+/* ====================================  GALLERY END  ==================================== */
+
+/* ====================================   NEW PRODUCTS  ==================================== */
+
+.new-prod-cont {
+  padding-left: 90px;
+}
+.cat-blur-2 {
+  position: absolute;
+  background-image: url("food/cat-b1.jpg");
+  width: 100%;
+  height: 130vh;
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+.new-prod {
+  background-color: #fff9f9;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.new-prod img {
+  max-width: 100%;
+  height: 130px;
+  border-radius: 50%;
+}
+
+.new-prod:hover {
+  cursor: pointer;
+  background-color: #1d1d1d;
+  transition: 0.5s ease;
+}
+
+.new-prod:hover img {
+  opacity: 0.7;
+  transition: 0.5s ease;
+}
+
+.new-prod:hover .new-prod-details p {
+  color: #ddd;
+}
+
+.new-prod .new-prod-details {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.new-prod .new-prod-details p {
+  color: #1d1d1d;
+  font-size: 1.3rem;
+}
+
+.new-prod .new-prod-details h4 {
+  color: red;
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+  margin: 10px;
+  font-weight: bold;
+  font-size: smaller;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ====================================   NEW PRODUCTS  END ==================================== */
+
+/* ==================================== FOOTER  ==================================== */
+
+footer {
+  background: #1d1d1d; /*rec #ededed; */
+}
+
+.footer-one {
+  text-align: left;
+  margin-bottom: 30px;
+}
+.footer-one .form-group {
+  margin-top: 10px;
+}
+.footer-one .btn {
+  margin-top: 10px;
+  width: 250px;
+}
+
+.footer-one input {
+  font-size: 0.8rem;
+  height: 30px;
+  width: 250px;
+}
+
+footer h3 {
+  font-family: "Engagement";
+  font-size: 3rem;
+  font-weight: 200;
+  color: white;
+}
+
+footer p {
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+footer .footer-one h5 {
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+footer h6 {
+  color: white;
+}
+.soobin {
+  line-height: 40%;
+}
+.footer-one span {
+  color: white;
+  padding: 5px;
+}
+.footer-one span:hover {
+  cursor: pointer;
+}
+
+/* ==================================== MENU  ==================================== */
+
+.menulist table {
+  background-color: white;
+  color: #000000;
+  margin-left: 90px;
+}
+
+.menu-name,
+.menu-price {
+  padding: 0 50px;
+  text-align: left;
+}
+
+.menu-name {
+  width: 400px;
+}
+.menu-name img {
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+table tr p {
+  margin: 10px 50px;
+}
+
+table tr:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+.menu-price {
+  font-weight: bold;
+}
+
+.services-blur {
+  position: fixed;
+  top: 0;
+  background-image: url("food/cat-b1.jpg");
+  width: 100%;
+  height: 130vh;
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+/* ==================================== MENU END  ==================================== */
+
+/* ==================================== RESERVATION  ==================================== */
+
+.container-z {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-bottom: 100px;
+}
+
+.reserve-form {
+  display: column;
+  width: 500px;
+  height: 420px;
+  background: white;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  color: #787878;
+  font-family: "Poppins", sans-serif;
+}
+
+.reserve-form h1 {
+  font-family: "Engagement", cursive;
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+.reserve-form input[type="text"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 400px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+  outline: none;
+}
+
+.reserve-form input[type="submit"] {
+  background-color: #1d1d1d;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 5px 40px;
+  text-decoration: none;
+  margin: 35px 130px;
+  cursor: pointer;
+}
+
+.reserve-form input[type="date"] {
+  text-align: center;
+  outline: none;
+  margin-left: 10px;
+}
+
+.reserve-form input[type="number"] {
+  width: 50px;
+  margin-top: 10px;
+  text-align: center;
+  outline: none;
+  margin-left: 10px;
+}
+
+/* ==================================== SERVICES  ==================================== */
+
+.services-blur {
+  position: fixed;
+  top: 0;
+  background-image: url("food/cat-b1.jpg");
+  width: 100%;
+  height: 130vh;
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+.services h2 {
+  font-family: "Engagement", cursive;
+  font-size: 3rem;
+  font-weight: 100;
+}
+.services p {
+  color: black;
+  font-weight: bold;
+}
+.zaza {
+  background-color: rgb(255, 255, 255);
+  width: 700px;
+}
+
+.tagger {
+  font-size: 2rem;
+  font-weight: 100;
+  font-family: "Yesteryear", cursive;
+}
+.serv-content {
+  width: 600px;
+  text-align: justify;
+}
+
+.hrline {
+  border-bottom: 3px solid #1d1d1d;
+  height: 2px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1366px) {
+ 
+}
+
+@media (max-width: 936px) {
+  .hamburger {
+    display: block;
+  }
+  .navlinks {
+    display: none;
+  }
+
+  .btn_signin {
+    display: none;
+  }
+
+  .new-prod-cont {
+    padding-left: 140px;
+  }
+
+  .gallery .gallery-box {
+    padding: 0px;
+  }
+
+  .address{
+    padding-left: 100px;
+  }
+
+  .newsletter{
+    padding-left: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navlinks {
+    display: none;
+  }
+
+  .btn_signin {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .navlinks {
+    display: none;
+  }
+
+  .btn_signin {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

@@ -1,0 +1,71 @@
+
+.logo{
+    width:200px;
+}
+
+.container{
+    display: flex;
+    flex: wrap;
+    
+}
+
+.rBox{
+    display:flex;
+    flex-direction: column;
+    background-color: #737373;
+    margin:10px;
+    width:850px;
+    height:830px;
+    border: 3px solid #333;
+    justify-content: start;
+    align-items: center;
+}
+
+.lBox{
+    background-color: black;
+    margin:10px;
+    width:850px;
+    height:830px;
+    object-fit: contain;
+    object-position: 100% 0;
+}
+
+
+
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    padding:10px;
+    margin: 10px;
+}
+
+h{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    padding:10px;
+    margin: auto;
+}
+
+
+.button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.button3 {border-radius: 8px;}
+
+#nameChar,#nameAnime{
+    color: rgb(141, 14, 14);
+
+}
+#img1,#img2,#img3{
+    height: 35vh;
+    width: 35vh;
+}

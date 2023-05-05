@@ -140,3 +140,36 @@ h4 {
   margin-top: -200px;
   border-radius: 20px;
 }
+
+.footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height:150px;
+}
+
+.footer-content{
+  padding-left: 10px;
+  padding-right: 10px;
+  width: auto;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+  padding-left: 12px; 
+  padding-right: 12px; 
+  margin-left: 16px;
+  margin-right: 16px;  
+}
+
+.text-list{
+  color:white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  list-style: none;
+}
+
+

@@ -591,6 +591,10 @@ table tr:hover {
   .newsletter{
     padding-left: 200px;
   }
+
+  .sample{
+    background-color: ;
+  }
 }
 
 @media (max-width: 600px) {
@@ -619,4 +623,5 @@ table tr:hover {
   .hamburger {
     display: block;
   }
+
 }

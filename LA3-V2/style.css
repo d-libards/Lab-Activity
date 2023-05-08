@@ -74,6 +74,8 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
+/* MAIN CONTENT */
+
 .contents {
   margin-top: 7em;
   display: flex;
@@ -285,7 +287,7 @@ hr {
 .footer-newsletter{
   width: 20em;
   margin-left: 30em;
-  margin-top: 1em;
+  margin-top: 1.5em;
   line-height: 1;
   /* background-color: #09529b; */
 }
@@ -300,6 +302,7 @@ hr {
   border-style: none;
   border: 2px solid #f43f5e;
   border-radius: 10px;
+  text-indent: 7px;
 }
 
 .submit{
@@ -308,4 +311,186 @@ hr {
   font-size:large;
   padding: 5px;
   margin-top: 0.5em;
+}
+
+@media (max-width: 1366px) {
+  nav {
+    padding-left: 0;
+    /* background-color: #09529b; */
+  }
+  
+  h3 {
+    margin-left: 5em;
+  }
+  
+  nav ul li {
+    margin-left: 3em;
+  }
+  
+  nav ul li:first-child {
+    margin-left: 5em;
+  }
+  
+  .btn-sign {
+    margin-right: 7em;
+  }
+  
+
+  /* MAIN CONTENT  */
+  .content {
+    margin-left: 4em;
+  }
+
+  .title {
+    width: fit-content;
+  }
+
+  .text{
+    width: 100%;
+    text-align: justify;
+  }
+
+  /* FOOTER  */
+  .footer-content {
+    padding-left: 1em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+  }
+
+  .footer-title-company{
+    font-size: 20px;
+    padding-top: 1em;
+  }
+
+  .company {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  
+  .footer-title {
+    font-size: 20px;
+  }
+  
+  .text-list li{
+    padding-bottom: 7px;
+  }
+
+  .footer-newsletter{
+    margin-top: 1.5em;
+    margin-left: 14em;
+  }
+
+  .form{
+    text-indent: 7px;
+  }
+}
+
+@media (max-width: 936px) {
+  h3 {
+    margin-left: 3em;
+  }
+
+  .btn-sign {
+    margin-right: 2em;
+  }
+
+  /* MAIN CONTENT  */
+  .contents {
+    margin-top: 4em;
+    height: 36em;
+  }
+
+  .content {
+    /* margin-top: 10em; */
+    width: 20%;
+    margin-left: 3em;
+    margin-right: 3.5em;
+    /* background-color: #0a8992; */
+  }
+  
+  h4 {
+    font-size: 0.80em;
+  }
+  
+  .title {
+    width: fit-content;
+    font-size: 6em;
+  }
+  
+  .text {
+    width: 26em;
+    text-align: justify;
+    /* background-color: #09529b; */
+    font-size: 0.8em;
+  }
+  
+  .content-2 {
+    width: auto;
+    height: 100%;
+    /* margin-left: -5em; */
+    /* background-color: #09529b; */
+  }
+  
+  .img {
+    width: 18em;
+    height: 22em;
+  }
+  
+  .details {
+    width: 18em;
+  }
+  
+  .meet-detail {
+    font-size: 0.8em;
+  }
+  
+  .meet-pass {
+    font-size: 1em;
+  }
+  
+  .btn-register {
+    width: 14.5em;
+    height: 2.5em;
+  }
+
+  /* FOOTER  */
+  .footer-content {
+    padding-left: 1em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+    /* background-color: #0a8992; */
+  }
+  
+  .footer-title-company{
+    font-size: 0.8em;
+  }
+  
+  .company {
+    margin-left: 1em;
+    margin-right: 0em;
+  }
+  
+  .footer-title {
+    font-size: 1em;
+  }
+  
+  .text-list,
+  .text-list a {
+    font-size: 0.9em;
+  }
+  
+  .footer-newsletter{
+    width: 13em;
+    margin-left: 5em;
+  }
+
+  .form{
+    font-size: small;
+    text-indent: 7px;
+  }
+
+  .submit{
+    width: 100%;
+    font-size: medium;
+  }
 }

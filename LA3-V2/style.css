@@ -286,7 +286,7 @@ hr {
 
 .footer-newsletter{
   width: 20em;
-  margin-left: 30em;
+  margin-left: 31em;
   margin-top: 1.5em;
   line-height: 1;
   /* background-color: #09529b; */
@@ -480,7 +480,8 @@ hr {
   }
   
   .footer-newsletter{
-    width: 13em;
+    margin-right: 1em;
+    width: 18em;
     margin-left: 5em;
   }
 

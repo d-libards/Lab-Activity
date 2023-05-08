@@ -69,6 +69,11 @@ nav ul li a {
   padding: 0.5em 1em;
 }
 
+nav ul li a:hover {
+  color: #f43f5e;
+  text-decoration: none;
+}
+
 .contents {
   margin-top: 7em;
   display: flex;
@@ -188,18 +193,23 @@ h4 {
   border-style: none;
   border: 2px solid #fff;
   border-radius: 10px;
+  /* background-color: #09529b; */
 }
+
+
+/* FOOTER */
 
 .footer {
   /* margin-top: 100px; */
   /* margin-bottom: 50px; */
   background-color: black;
+  /* background-color: #09529b; */
   display: flex;
   justify-content: start;
   /* align-items: start; */
   flex-wrap: wrap;
   flex-direction: row;
-  height: max-content;
+  height: fit-content;
 }
 
 .footer-content {
@@ -211,8 +221,19 @@ h4 {
   margin-bottom: 2em;
 }
 
+.footer-title-company{
+  color: #f43f5e;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
 .company {
-  margin-left: 15em;
+  margin-left: 10em;
+  flex-direction: column;
+  margin-right: 5em;
+  line-height: 1  ;
 }
 
 .footer-title {
@@ -220,12 +241,71 @@ h4 {
   font-size: 20px;
   font-weight: 500;
   padding-bottom: 10px;
+  padding-top: 1em;
 }
+
 .text-list,
 .text-list a {
   color: white;
-  padding-top: 30px;
-  padding-bottom: 10px;
+ 
   list-style: none;
   text-decoration: none;
+}
+
+.text-list li{
+  padding-bottom: 7px;
+}
+
+.text-list a:hover {
+  color: #f43f5e;
+  text-decoration: none;
+}
+
+hr {
+  color: #ccc;
+  background-color: #ccc;
+  height: 1px;
+  width: 100%;
+  border: 1px solid white;
+}
+
+
+.copyright{
+  display: flex;
+  /* background-color: #09529b; */
+  width: 100%;
+  justify-content: center;
+  color:#f43f5e;
+  font-size: 13px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  padding-top: 1em;
+}
+
+.footer-newsletter{
+  width: 20em;
+  margin-left: 30em;
+  margin-top: 1em;
+  line-height: 1;
+  /* background-color: #09529b; */
+}
+
+.form{
+  width: 99%;
+  height: 35px;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: transparent;
+  color: white;
+  border-style: none;
+  border: 2px solid #f43f5e;
+  border-radius: 10px;
+}
+
+.submit{
+  width: 100%;
+  height: fit-content;
+  font-size:large;
+  padding: 5px;
+  margin-top: 0.5em;
 }

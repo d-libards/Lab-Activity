@@ -558,8 +558,67 @@ hr {
 
   .contents{
     display: flex;
+    flex-direction: column;
+    background-color: #18181b;
+    max-height: fit-content;
   }
 
+  .content-2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+  }
+
+  .img{
+    display: none;
+  }
+
+  .details{
+
+  }
+
+  .btn-register{
+  }
+  .footer-content {
+    padding-left: 1em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+    /* background-color: #0a8992; */
+  }
+  
+  .footer-title-company{
+    font-size: 0.8em;
+  }
+  
+  .company {
+    margin-left: 1em;
+    margin-right: 0em;
+  }
+  
+  .footer-title {
+    font-size: 1em;
+  }
+  
+  .text-list,
+  .text-list a {
+    font-size: 0.9em;
+  }
+  
+  .footer-newsletter{
+    margin-right: 1em;
+    width: 18em;
+    margin-left: 5em;
+  }
+
+  .form{
+    font-size: small;
+    text-indent: 7px;
+  }
+
+  .submit{
+    width: 100%;
+    font-size: medium;
+  }
 
 
 

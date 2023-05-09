@@ -7,6 +7,21 @@
   font-family: "Alata", sans-serif;
 }
 
+.hamburger{
+  display:none;
+  cursor:pointer;
+}
+
+.bar{
+  display:block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transform: all 0.3s ease-in-out;
+  transform: all 0.3s ease-in-out;
+  background-color:white;
+}
+
 body {
   /* flex: content; */
   position: flex;
@@ -44,9 +59,9 @@ nav ul li {
   line-height: 0px;
 }
 
-nav ul li:first-child {
+/* nav ul li:first-child {
   margin-left: 7em;
-}
+} */
 
 nav ul li a {
   color: #fff;
@@ -327,9 +342,9 @@ hr {
     margin-left: 3em;
   }
   
-  nav ul li:first-child {
+  /* nav ul li:first-child {
     margin-left: 5em;
-  }
+  } */
   
   .btn-sign {
     margin-right: 7em;
@@ -494,4 +509,122 @@ hr {
     width: 100%;
     font-size: medium;
   }
+}
+
+@media (max-width: 600px) {
+  .hamburger{
+    display:block;
+  }
+  
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu{
+    position:fixed;
+    left: -100%;
+    top: 60px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #18181b;
+    width: 100%;
+    text-align:center;
+    align-items: flex-start;
+    transition: 0.3s;
+
+  }
+
+  .nav-menu.active{
+    left: 0;
+  }
+
+  .navbar{
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+  }
+  .nav-item{
+    margin: 12px 0;
+    margin-left: 0px;
+  }
+
+  .contents{
+    display: flex;
+    flex-direction: column;
+    background-color: #18181b;
+    max-height: fit-content;
+  }
+
+  .content-2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+  }
+
+  .img{
+    display: none;
+  }
+
+  .details{
+
+  }
+
+  .btn-register{
+  }
+  .footer-content {
+    padding-left: 1em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+    /* background-color: #0a8992; */
+  }
+  
+  .footer-title-company{
+    font-size: 0.8em;
+  }
+  
+  .company {
+    margin-left: 1em;
+    margin-right: 0em;
+  }
+  
+  .footer-title {
+    font-size: 1em;
+  }
+  
+  .text-list,
+  .text-list a {
+    font-size: 0.9em;
+  }
+  
+  .footer-newsletter{
+    margin-right: 1em;
+    width: 18em;
+    margin-left: 5em;
+  }
+
+  .form{
+    font-size: small;
+    text-indent: 7px;
+  }
+
+  .submit{
+    width: 100%;
+    font-size: medium;
+  }
+
+
+
+  {
+
+
+}
+  
 }

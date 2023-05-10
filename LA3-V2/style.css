@@ -23,6 +23,21 @@ nav {
   /* background-color: #09529b; */
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transform: all 0.3s ease-in-out;
+  transform: all 0.3s ease-in-out;
+  background-color: white;
+}
+
 h3 {
   color: #f43f5e;
   font-size: 1em;
@@ -198,7 +213,6 @@ h4 {
   /* background-color: #09529b; */
 }
 
-
 /* FOOTER */
 
 .footer {
@@ -223,7 +237,7 @@ h4 {
   margin-bottom: 2em;
 }
 
-.footer-title-company{
+.footer-title-company {
   color: #f43f5e;
   font-size: 20px;
   font-weight: 500;
@@ -235,7 +249,7 @@ h4 {
   margin-left: 10em;
   flex-direction: column;
   margin-right: 5em;
-  line-height: 1  ;
+  line-height: 1;
 }
 
 .footer-title {
@@ -249,12 +263,12 @@ h4 {
 .text-list,
 .text-list a {
   color: white;
- 
+
   list-style: none;
   text-decoration: none;
 }
 
-.text-list li{
+.text-list li {
   padding-bottom: 7px;
 }
 
@@ -271,20 +285,19 @@ hr {
   border: 1px solid white;
 }
 
-
-.copyright{
+.copyright {
   display: flex;
   /* background-color: #09529b; */
   width: 100%;
   justify-content: center;
-  color:#f43f5e;
+  color: #f43f5e;
   font-size: 13px;
   font-weight: 500;
   padding-bottom: 10px;
   padding-top: 1em;
 }
 
-.footer-newsletter{
+.footer-newsletter {
   width: 20em;
   margin-left: 31em;
   margin-top: 1.5em;
@@ -292,7 +305,7 @@ hr {
   /* background-color: #09529b; */
 }
 
-.form{
+.form {
   width: 99%;
   height: 35px;
   font-size: 1em;
@@ -305,10 +318,10 @@ hr {
   text-indent: 7px;
 }
 
-.submit{
+.submit {
   width: 100%;
   height: fit-content;
-  font-size:large;
+  font-size: large;
   padding: 5px;
   margin-top: 0.5em;
 }
@@ -318,23 +331,22 @@ hr {
     padding-left: 0;
     /* background-color: #09529b; */
   }
-  
+
   h3 {
     margin-left: 5em;
   }
-  
+
   nav ul li {
     margin-left: 3em;
   }
-  
+
   nav ul li:first-child {
     margin-left: 5em;
   }
-  
+
   .btn-sign {
     margin-right: 7em;
   }
-  
 
   /* MAIN CONTENT  */
   .content {
@@ -345,7 +357,7 @@ hr {
     width: fit-content;
   }
 
-  .text{
+  .text {
     width: 100%;
     text-align: justify;
   }
@@ -357,7 +369,7 @@ hr {
     padding-bottom: 1em;
   }
 
-  .footer-title-company{
+  .footer-title-company {
     font-size: 20px;
     padding-top: 1em;
   }
@@ -366,21 +378,21 @@ hr {
     margin-left: 3em;
     margin-right: 3em;
   }
-  
+
   .footer-title {
     font-size: 20px;
   }
-  
-  .text-list li{
+
+  .text-list li {
     padding-bottom: 7px;
   }
 
-  .footer-newsletter{
+  .footer-newsletter {
     margin-top: 1.5em;
     margin-left: 14em;
   }
 
-  .form{
+  .form {
     text-indent: 7px;
   }
 }
@@ -407,47 +419,47 @@ hr {
     margin-right: 3.5em;
     /* background-color: #0a8992; */
   }
-  
+
   h4 {
-    font-size: 0.80em;
+    font-size: 0.8em;
   }
-  
+
   .title {
     width: fit-content;
     font-size: 6em;
   }
-  
+
   .text {
     width: 26em;
     text-align: justify;
     /* background-color: #09529b; */
     font-size: 0.8em;
   }
-  
+
   .content-2 {
     width: auto;
     height: 100%;
     /* margin-left: -5em; */
     /* background-color: #09529b; */
   }
-  
+
   .img {
     width: 18em;
     height: 22em;
   }
-  
+
   .details {
     width: 18em;
   }
-  
+
   .meet-detail {
     font-size: 0.8em;
   }
-  
+
   .meet-pass {
     font-size: 1em;
   }
-  
+
   .btn-register {
     width: 14.5em;
     height: 2.5em;
@@ -460,38 +472,388 @@ hr {
     padding-bottom: 1em;
     /* background-color: #0a8992; */
   }
-  
-  .footer-title-company{
+
+  .footer-title-company {
     font-size: 0.8em;
   }
-  
+
   .company {
     margin-left: 1em;
     margin-right: 0em;
   }
-  
+
   .footer-title {
     font-size: 1em;
   }
-  
+
   .text-list,
   .text-list a {
     font-size: 0.9em;
   }
-  
-  .footer-newsletter{
+
+  .footer-newsletter {
     margin-right: 1em;
     width: 18em;
     margin-left: 5em;
   }
 
-  .form{
+  .form {
     font-size: small;
     text-indent: 7px;
   }
 
-  .submit{
+  .submit {
     width: 100%;
     font-size: medium;
+  }
+}
+
+@media (max-width: 600px) {
+  .hamburger {
+    display: block;
+    padding-left: 26rem;
+  }
+  nav {
+    padding-top: 20px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .btn-sign {
+    display: none;
+  }
+
+  /* MAIN CONTENT */
+
+  .contents {
+    margin-top: 2em;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    /* background-color: aqua; */
+    padding-bottom: 1rem;
+  }
+
+  .content {
+    width: auto;
+    height: auto;
+    padding-top: 2em;
+  }
+
+  h4 {
+    font-size: 1em;
+    font-weight: 500;
+    margin-left: 0.5em;
+  }
+
+  .title {
+    font-size: 5em;
+  }
+
+  .text {
+    width: 33em;
+    font-size: 0.8em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .content-2 {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .img {
+    margin-left: 2.6em;
+    margin-right: 0em;
+  }
+
+  .details {
+    width: fit-content;
+    height: 10em;
+    margin-left: 1em;
+    margin-right: 0em;
+    line-height: 1.2em;
+    display: flex;
+    /* background-color: #09529b; */
+    margin-top: -7em;
+    flex-direction: row;
+    /* text-align: justify; */
+  }
+
+  .meet-detail {
+    width: 9em;
+    color: #71717a;
+    font-size: 1em;
+    padding: 0.3em 0;
+    margin-top: 3em;
+  }
+
+  .meet-pass {
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    /* padding: 0.3em; */
+    padding-bottom: 3em;
+  }
+
+  .btn-first{
+    position: absolute;
+    top: 27em;
+    width: 10em;
+    left: 17em;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    /* margin-top: 100px; */
+    /* margin-bottom: 50px; */
+    background-color: black;
+    /* background-color: #09529b; */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: fit-content;
+  }
+
+  .footer-content {
+    padding-left: 2em;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0em;
+  }
+
+  .footer-title-company {
+    color: #f43f5e;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 0em;
+    padding-top: 1em;
+  }
+
+  .company {
+    margin-left: 5em;
+    flex-direction: column;
+    margin-right: 5em;
+    line-height: 1;
+  }
+
+  .footer-title {
+    color: gray;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 1px;
+    padding-top: 1em;
+  }
+
+  .text-list,
+  .text-list a {
+    color: white;
+
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .text-list li {
+    padding-bottom: 5px;
+  }
+
+  .text-list a:hover {
+    color: #f43f5e;
+    text-decoration: none;
+  }
+
+  hr {
+    color: #ccc;
+    background-color: #ccc;
+    height: 1px;
+    width: 100%;
+    border: 1px solid white;
+  }
+
+  .copyright {
+    display: flex;
+    /* background-color: #09529b; */
+    width: 100%;
+    justify-content: center;
+    color: #f43f5e;
+    font-size: 13px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    padding-top: 1em;
+  }
+
+  .footer-newsletter {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: #09529b; */
+  }
+
+  .form {
+    width: 350px;
+    height: 35px;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: transparent;
+    color: white;
+    border-style: none;
+    border: 2px solid #f43f5e;
+    border-radius: 10px;
+    text-indent: 7px;
+  }
+
+  .submit {
+    width: 100%;
+    height: fit-content;
+    font-size: large;
+    padding: 6px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}
+
+@media (max-width: 400px) {
+  .hamburger {
+    display: block;
+    padding-left: 15rem;
+  }
+
+  nav {
+    max-width: 400px;
+    /* background-color: #09529b; */
+  }
+
+  h3 {
+    margin-left: 1em;
+    margin-right: 0;
+    white-space: nowrap;
+  }
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #0a8992; */
+    height: fit-content;
+  }
+
+  .content {
+    height: fit-content;
+    margin-top: 0em;
+    margin-left: 2em;
+    background-color: #18181b;
+  }
+
+  .title {
+    width: fit-content;
+    font-size: 4.5em;
+  }
+
+  h4{
+    /* line-height: 1; */
+    width: 5em;
+  }
+  .text {
+    max-width: 350px;
+    margin-bottom: 3em;
+  }
+
+  .content-2 {
+    width: auto;
+    /* margin-left: 20em; */
+    /* background-color: red; */
+    flex-direction: column;
+  }
+  
+  .img {
+    width: 15em;
+    height: 17em;
+    margin-left: 0;
+  }
+  
+  .details {
+    width: 20em;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /* background-color: #09529b; */
+    margin-top: -2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .meet-detail {
+    color: #71717a;
+    font-size: 1em;
+    padding: 0.3em 0;
+  }
+  
+  .meet-pass {
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    /* padding: 0.3em; */
+  }
+
+  .btn-first{
+    position: absolute;
+    top: 37em;
+    left: 5em;
+  }
+
+  .footer {
+    flex-direction: row;
+    margin-top: 3em;
+    width: 100%;
+  }
+
+  .company{
+    padding-left: 3em;
+  }
+
+  .text-list {
+    height: 40%;
+    margin-bottom: 0;
+  }
+
+  .footer-content {
+    margin: 0;
+  }
+
+  .footer-newsletter {
+    width: 100%;
+    margin-top: 0em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form {
+    width: 14.8em;
+    height: 35px;
+    margin-right: 1em;
+  }
+
+  .submit {
+    width: 60%;
+    height: fit-content;
+    font-size: large;
+    margin-top: 0.5em;
+    margin-left: 73px;
+    margin-bottom: 15px;
   }
 }

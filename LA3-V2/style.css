@@ -553,7 +553,8 @@ hr {
   }
 
   .text {
-    font-size: 0.9em;
+    width: 33em;
+    font-size: 0.8em;
     margin-top: 1em;
     margin-bottom: 1em;
   }
@@ -575,7 +576,8 @@ hr {
     width: fit-content;
     height: 10em;
     margin-left: 1em;
-    margin-right: 1em;
+    margin-right: 0em;
+    line-height: 1.2em;
     display: flex;
     /* background-color: #09529b; */
     margin-top: -7em;
@@ -584,10 +586,11 @@ hr {
   }
 
   .meet-detail {
+    width: 9em;
     color: #71717a;
     font-size: 1em;
     padding: 0.3em 0;
-    margin-top: 0;
+    margin-top: 3em;
   }
 
   .meet-pass {
@@ -600,6 +603,7 @@ hr {
 
   .btn-first{
     position: absolute;
+    top: 27em;
     width: 10em;
     left: 17em;
   }
@@ -757,6 +761,11 @@ hr {
     width: fit-content;
     font-size: 4.5em;
   }
+
+  h4{
+    /* line-height: 1; */
+    width: 5em;
+  }
   .text {
     max-width: 350px;
     margin-bottom: 3em;
@@ -782,7 +791,7 @@ hr {
     margin-right: auto;
     display: block;
     /* background-color: #09529b; */
-    margin-top: 1em;
+    margin-top: -2em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -803,13 +812,13 @@ hr {
 
   .btn-first{
     position: absolute;
-    top: 40em;
+    top: 37em;
     left: 5em;
   }
 
   .footer {
     flex-direction: row;
-    margin-top: 4em;
+    margin-top: 3em;
     width: 100%;
   }
 

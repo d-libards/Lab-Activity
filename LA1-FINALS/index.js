@@ -86,4 +86,3 @@ console.log();
     }
 
     console.log("the first digit is " + Math.trunc(val))
-    console.log();

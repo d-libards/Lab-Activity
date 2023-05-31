@@ -1,8 +1,6 @@
 //function to handle scroll event
 function scroll() {
-    console.log('You are scrolling!');
-    // console.log('Vertical scroll position:', window.scrollY);
-    // console.log('Horizontal scroll position:', window.scrollX);
+  console.log('You are scrolling!'); 
 }
   
 window.addEventListener('scroll', scroll);

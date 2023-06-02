@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,100;1,200&display=swap');        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins';
+        }
+
+        body{
+            background-color: #355070;
+        }
+
+
+        .main {
+            background-color: #e56b6f;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 200px;
+            width: fit-content;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+
+        .time{
+            font-size: 5rem;
+            color: white;
+            font-weight: 100;
+        }
+        .btns:hover{
+            cursor: pointer;
+        }
+
+        button{
+            width: 100px;
+            height: 40px;
+            font-weight: 200;
+            background-color: #b56576;
+            border: 1px #6d597a solid;
+            border-radius: 5px;
+            color: white;
+        }
+
+        button:hover{
+            cursor: pointer;
+            background-color: #6d597a;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="time">
+            <span id="minute">00</span>
+            <span>:</span>
+            <span id="second">00</span>            
+        </div>
+        <div class="btns">
+            <button onclick="start()">Start</button>
+            <button onclick="stop()">Stop</button>
+            <button onclick="restart()">Reset</button>                
+        </div>
+    </div>        
+
+    <script>
+
+        let state = false;
+        let seconds = 0;
+        let minutes = 0;
+        let id;
+
+        function start() {
+            if (state == false) {
+                console.log("start")
+                state = true;
+                id = setInterval(count, 1000);
+
+                function count() {
+                    if (state == true) {
+                        // seconds 
+                        seconds++;
+
+                        if (seconds == 60) {
+                            seconds = 0;
+                            minutes++;
+                        }
+
+                        if (seconds < 10) {
+                            document.getElementById("second").innerHTML = "0" + seconds;
+                        }
+                        else {
+                            document.getElementById("second").innerHTML = seconds;
+                        }
+
+                        // minutes
+
+                        if (minutes < 10) {
+                            document.getElementById("minute").innerHTML = "0" + minutes;
+                        }
+                        else {
+                            document.getElementById("minute").innerHTML = minutes;
+                        }
+                    }
+                }
+            }
+        }
+
+        function stop() {
+            state = false;
+            clearInterval(id);
+        }
+
+        function restart() {
+            state = false;
+            clearInterval(id);
+            seconds = 0;
+            minutes = 0;
+            document.getElementById("second").innerHTML = "00";
+            document.getElementById("minute").innerHTML = "00";
+        }
+
+    </script>
+
+
+</body>
+
+</html>

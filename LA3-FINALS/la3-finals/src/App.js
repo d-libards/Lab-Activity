@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './index.css';
 import { profileHover } from './profile-hover.js';
-import { Dropdown } from './dropdownMenu.js';
+import { Dropdown } from './dropdown.js';
 
 function App() {
   useEffect(() => {

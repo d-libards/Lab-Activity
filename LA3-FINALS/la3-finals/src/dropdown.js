@@ -12,6 +12,6 @@ export function Dropdown() {
       dropdownIcon.classList.add("transform", "rotate-180");
     }
   });
-
 }
+
   

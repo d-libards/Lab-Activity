@@ -11,14 +11,14 @@ function App() {
 
   return (
     <div className="flex flex-col p-0 m-0 font-alata h-auto bg-custom-color">
-      <div className='flex'>
+      <div className="flex bg-custom-color">
         {/* <!-- SIDEBAR --> */}
         <div className="flex">
           {sidebar()}
         </div>
 
         {/* MAIN CONTENT */}
-        <div className="flex-col flex-grow text-white h-auto z-0">
+        <div className="flex-col flex-grow text-white h-auto bg-custom-color">
           {/* <!-- TOP NAVBAR --> */}
           {topNavBar()}
 

@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  darkMode: "class",
   theme: {
     borderWidth: {
       1: "1px",
@@ -28,6 +29,10 @@ module.exports = {
         "toppick2-title-color": "rgba(43, 42, 27, 0.8)",
         "toppick3-title-color": "rgba(6, 26, 62, 0.8)",
         "toppick4-title-color": "rgba(5, 87, 110, 0.8)",
+
+        'light-cclr': '#E9EBE9',
+        'light-hvr-sdbar': '#7A1450',
+        'light-txt': '#2A2F4F',
 
         "custom-color": "#04151D",
         // custom-color for the whole website body

@@ -517,11 +517,11 @@ function topPicks(){
   );
 }
 
-function recentlyPlayed() {
+function recentlyPlayed() {  
   return(
     // RECENTLY PLAYED
     <div>
-              <div className="dark:text-black text-[28px] mt-[12px] mb-[25px] flex justify-between items-center">
+        <div className="dark:text-black text-[28px] mt-[12px] mb-[25px] flex justify-between items-center">
           <h1>Recently Played</h1>
           <h1 className="text-[22px] hover:text-custom-color-sidebar-brown-hover hidden sm:inline"><a href="/#">See All</a>
           </h1>
@@ -675,6 +675,7 @@ function recentlyPlayed() {
             </a>
               {/* <!-- HOVER PLAY-BTN --> */}
               <button id="play-btn-recent1"
+                onClick={() => setDetails('Hostage','Billie Eilish','/assets/home-assets/recent-1.png')}
                 className="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
                 <div href="" className="w-6 h-6">
                   <svg className="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -701,6 +702,7 @@ function recentlyPlayed() {
               </a>
               {/* <!-- HOVER PLAY-BTN --> */}
               <button id="play-btn-recent2"
+                onClick={() => setDetails('Rude Boy','Rhianna','/assets/home-assets/recent-2.png')}
                 className="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
                 <div href="" className="w-6 h-6">
                   <svg className="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -725,6 +727,7 @@ function recentlyPlayed() {
             </a>
               {/* <!-- HOVER PLAY-BTN --> */}
               <button id="play-btn-recent3"
+                onClick={() => setDetails('Roger Rabbit','Sleeping With Sirens','/assets/home-assets/recent-3.png')}
                 className="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
                 <div href="" className="w-6 h-6">
                   <svg className="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -749,6 +752,7 @@ function recentlyPlayed() {
             </a>
               {/* <!-- HOVER PLAY-BTN --> */}
               <button id="play-btn-recent4"
+                onClick={() => setDetails('Tally','BLACKPINK','/assets/home-assets/recent-4.png')}
                 className="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
                 <div href="" className="w-6 h-6">
                   <svg className="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -773,6 +777,7 @@ function recentlyPlayed() {
             </a>
               {/* <!-- HOVER PLAY-BTN --> */}
               <button id="play-btn-recent5"
+                onClick={() => setDetails('Bulls In The Bronx','Pierce The Veil','/assets/home-assets/recent-5.png')}
                 className="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
                 <div href="" className="w-6 h-6">
                   <svg className="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -796,6 +801,7 @@ function recentlyPlayed() {
             </a>
               {/* <!-- HOVER PLAY-BTN --> */}
               <button id="play-btn-recent5"
+                onClick={() => setDetails('Bulls In The Bronx','Pierce The Veil','/assets/home-assets/recent-5.png')}
                 className="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
                 <div href="" className="w-6 h-6">
                   <svg className="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -819,7 +825,7 @@ function recentlyPlayed() {
 function whatYouLiked(){
   return(
     <div>
-              <div className="dark:text-black text-[28px] mt-[12px] mb-[24px] flex justify-between items-center">
+        <div className="dark:text-black text-[28px] mt-[12px] mb-[24px] flex justify-between items-center">
           <h1>More Of What You Like</h1>
           <h1 className="text-[22px] hover:text-custom-color-sidebar-brown-hover hidden sm:inline"><a href="/#">See All</a>
           </h1>
@@ -837,6 +843,7 @@ function whatYouLiked(){
 
                   {/* <!-- HOVER PLAY-BTN --> */}
                   <button id="play-btn-like1-mb"
+                    onClick={() => setDetails('So High','Doja Cat','/assets/home-assets/like-1.png')}
                     className="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
                     <div href="" className="w-6 h-6">
                       <svg className="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -970,6 +977,7 @@ function whatYouLiked(){
             </a>
               {/* <!-- HOVER PLAY-BTN --> */}
               <button id="play-btn-like1"
+                onClick={() => setDetails('So High','Doja Cat','/assets/home-assets/like-1.png')}
                 className="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
                 <div href="" className="w-6 h-6">
                   <svg className="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -996,6 +1004,7 @@ function whatYouLiked(){
             </a>
               {/* <!-- HOVER PLAY-BTN --> */}
               <button id="play-btn-like2"
+                onClick={() => setDetails('Nxde','(G)-IDLE','/assets/home-assets/like-2.png')}
                 className="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
                 <div href="" className="w-6 h-6">
                   <svg className="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -1020,6 +1029,7 @@ function whatYouLiked(){
             </a>
               {/* <!-- HOVER PLAY-BTN --> */}
               <button id="play-btn-like3"
+                onClick={() => setDetails('Teenage Dream: The ...','Katy Perry','/assets/home-assets/like-3.png')}
                 className="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
                 <div href="" className="w-6 h-6">
                   <svg className="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -1044,6 +1054,7 @@ function whatYouLiked(){
             </a>
               {/* <!-- HOVER PLAY-BTN --> */}
               <button id="play-btn-like4"
+                onClick={() => setDetails('SOS','SZA','/assets/home-assets/like-5.png')}
                 className="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
                 <div href="" className="w-6 h-6">
                   <svg className="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -1068,6 +1079,7 @@ function whatYouLiked(){
             </a>
               {/* <!-- HOVER PLAY-BTN --> */}
               <button id="play-btn-like5"
+                onClick={() => setDetails('Fearless (Tay ...','Taylor Swift','/assets/home-assets/like-5.png')}
                 className="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
                 <div href="" className="w-6 h-6">
                   <svg className="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -1091,6 +1103,7 @@ function whatYouLiked(){
             </a>
               {/* <!-- HOVER PLAY-BTN --> */}
               <button id="play-btn-like5"
+                onClick={() => setDetails('Fearless (Tay ...','Taylor Swift','/assets/home-assets/like-5.png')}
                 className="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
                 <div href="" className="w-6 h-6">
                   <svg className="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -1169,18 +1182,26 @@ function footer(){
 }
 
 function playbar(){
+  let title = sessionStorage.getItem("title");
+  let artist = sessionStorage.getItem("artist");
+  let img = sessionStorage.getItem("img");
+
+  if(title === null){
+    title = 'King Of The Heart';
+    artist = 'Pierce The Veil';
+    img = '/assets/home-assets/recent-5.png'
+  }
+
   return(
     <div>
       {/* <!-- PLAYBAR --> */}
       <div className="w-[calc(100%-20px)] mr-2 ml-2 pl-5 pr-5 pb-0 fixed h-[90px] bottom-16 lg:mt-auto lg:bottom-5 z-50 bg-custom-color-playbar opacity-80 rounded-3xl mt-auto grid grid-cols-4 grid-flow-row-dense items-center text-center">
         <div className="w-[150px] flex items-center text-start md:w-[200px] lg:w-auto">
-          <img src="/assets/addplaylist-assets/album pic.png" alt="album"
+          <img id="playImg" src={img} alt="album"
             className="flex-inline-block w-10 h-10 rounded-lg md:w-14 md:h-14"></img>
           <div className="ml-2 ">
-            <a href="/#" className="flex-inline-block text-custom-color-song-font text-[14px] md:text-[20px]">King Of
-              The Heart</a>
-            <p className="flex-inline-block text-[12px] md:text-[18px] text-custom-color-add-searchfont"> Pierce The
-              Viel</p>
+            <a id="playTitle" href="/#" className="flex-inline-block text-custom-color-song-font text-[14px] md:text-[20px]">{title}</a>
+            <p id="playArtist" className="flex-inline-block text-[12px] md:text-[18px] text-custom-color-add-searchfont">{artist}</p>
           </div>
         </div>
         <div className="hidden md:col-span-2 md:block">
@@ -1331,3 +1352,39 @@ function playbar(){
     </div>
   );
 }
+
+
+let setDetails = (title, artist, img) => {
+  console.log(title, artist, img);
+  sessionStorage.setItem("title", title);
+  sessionStorage.setItem("artist", artist);
+  sessionStorage.setItem("img", img);
+
+  setPlayBar();
+}
+
+
+let setPlayBar = () => {
+  let title = sessionStorage.getItem("title");
+  let artist = sessionStorage.getItem("artist");
+  let img = sessionStorage.getItem("img");
+
+  console.log("Title:", title);
+  console.log("Artist:", artist);
+  console.log("Img:", img);
+
+  console.log(document.getElementById('playTitle'))
+
+  let x = document.getElementById('playTitle');
+  let y = document.getElementById('playArtist');
+  let z = document.getElementById('playImg');
+
+  if(x != null && y != null){
+    x.innerHTML = title;
+    y.innerHTML = artist;
+    z.src = img;
+  }
+
+}
+
+setPlayBar();

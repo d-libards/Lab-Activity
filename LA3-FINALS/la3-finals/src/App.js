@@ -5,7 +5,7 @@ import { Dropdown } from './dropdown.js';
 
 function App() {
   const [theme, setTheme] = useState(null);
-
+  // FOR DARK MODE
   useEffect(() => {
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       setTheme('dark');
@@ -23,16 +23,17 @@ function App() {
     }
   }, [theme]);
 
+  // HANDLES THEME SWITCHING
   const handleThemeSwitch = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
   };
-
-  // useEffect(() => {
-  //   profileHover(); 
-  //   Dropdown();
+  // FOR SONG HOVER AND PROFILE DROPDOWN MENU
+  useEffect(() => {
+    profileHover(); 
+    Dropdown();
 
     
-  // }, []);
+  }, []);
 
   return (
     <div className="flex flex-col p-0 m-0 font-alata h-auto bg-custom-color">
@@ -45,8 +46,9 @@ function App() {
         {/* MAIN CONTENT */}
         <div className="flex-col flex-grow text-white h-auto bg-custom-color dark:bg-light-cclr">
           {/* <!-- TOP NAVBAR --> */}
-          <div class="flex justify-center">
-            <button class="bg-green-400 p-4 rounded-3xl" onClick={handleThemeSwitch}>Dark Mode Tester</button>
+          {/* BUTTON RESPONSIBLE FOR DARK MODE  */}
+          <div class="flex justify-end mr-15 pt-2">
+            <button class="bg-custom-color-song-button p-4 rounded-3xl" onClick={handleThemeSwitch}><i class="fa-solid fa-lightbulb"></i></button>
           </div>
           {topNavBar()}
 
